@@ -6,8 +6,9 @@ Esse programa faz uma conversão de bases de número inteiro positivos.
 
 1. [Instalação](#instalação)
 2. [Requerimentos](#requerimentos)
-3. [Guia-Rápido](#guia-rápido)
-4. [Autor](#autor)
+4. [Documentação](#documentação)
+4. [Guia-Rápido](#guia-rápido)
+5. [Autor](#autor)
 
 ## Instalação
 Há duas maneiras de usar esse programa:
@@ -20,8 +21,8 @@ O programa foi feito em ```python 3.8.5``` com a adição de uma biblioteca exte
 
     pip instal pyqt5-tools
 
-Mais informações sobre o programa se encontra na [wiki](https://github.com/Gui25Reis/Mudanca-de-base/wiki).
-
+## Documentação
+A documentação do projeto se está feita na [wiki](https://github.com/Gui25Reis/Mudanca-de-base/wiki) do repositório.
 
 ## Guia-Rápido
 ![turorial](https://github.com/Gui25Reis/Mudanca-de-base/blob/main/documentacao/_tutorial/Mudan%C3%A7a%20de%20Base%20-%20Tutorial%20OK.jpg)
