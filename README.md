@@ -25,7 +25,7 @@ O programa foi feito em ```python 3.8.5``` com a adição de uma biblioteca exte
 A documentação do projeto se está feita na [wiki](https://github.com/Gui25Reis/Mudanca-de-base/wiki) do repositório.
 
 ## Guia-Rápido
-![turorial](https://github.com/Gui25Reis/Mudanca-de-base/blob/main/documentacao/_tutorial/Mudan%C3%A7a%20de%20Base%20-%20Tutorial%20OK.jpg)
+![turorial](https://github.com/Gui25Reis/Mudanca-de-base/blob/main/arquivos/_documentacao/_tutorial/Mudan%C3%A7a%20de%20Base%20-%20Tutorial%20OK.jpg)
 
 
 ## Autor
