@@ -42,25 +42,3 @@ class Mudan_Base:
             else:                                           # Se não tiver letra
                 res_str += str(self.res[ind])               # Apenas add o próprio número
         return res_str                                      # Retorna o resultado
-    
-
-
-# Funções prontas de conversão:
-
-# Bin() ->  Muda o número para base 2
-#   -> bin(3)           - print: 0o11
-#   -> f'{10:b}'        - print: 11
-#   -> format(10, 'b')  - print: 11
-
-# Oct() ->  Muda o número para base 8
-#   -> oct(255)         - print: 0o12
-#   -> '%o' % 10        - print: 12 
-#   -> f'{10:o}'        - print: 12
-#   -> format(10, 'o')  - print: 12
-
-# Hex() ->  Muda o número para base 16
-#   -> hex(255)         - print: 0xff
-#   -> '%x' % 255       - print: ff 
-#   -> '%X' % 255       - print: FF 
-#   -> f'{10:x}'        - print: ff
-#   -> format(10, 'x')  - print: ff
