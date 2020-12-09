@@ -12,7 +12,7 @@ Esse programa faz uma conversão de bases de número inteiro positivos.
 
 ## Instalação
 Há duas maneiras de usar esse programa:
-- Existe um executável pronto que pode ser usado. Basta baixa o [.zip](https://github.com/Gui25Reis/Mudanca-de-base/raw/main/arquivos/_execut%C3%A1vel.rar) e executar o arquivo .exe. Quando aberto, aparecerá duas telas, a tela preta pode minimizar e deixar apenas o programa. Nesse [vídeo](https://github.com/Gui25Reis/Mudanca-de-base/wiki/Demonstra%C3%A7%C3%A3o) mostra um exemplo da execução e do uso.
+- Existe um executável pronto que pode ser usado. Basta baixa o [.zip](https://github.com/Gui25Reis/Mudanca-de-base/raw/main/arquivos/_executavel.rar) e executar o arquivo .exe. Quando aberto, aparecerá duas telas, a tela preta pode minimizar e deixar apenas o programa. Nesse [vídeo](https://github.com/Gui25Reis/Mudanca-de-base/wiki/Demonstra%C3%A7%C3%A3o) mostra um exemplo da execução e do uso.
 
 - Baixando a pasta [_main](https://github.com/Gui25Reis/Mudanca-de-base/tree/main/_main) você consegue ter acesso ao código. As requisições estão declaradas na parte de [Requerimentos](#requerimentos). Para executar o programa basta rodar o arquivo ```main```.
 
