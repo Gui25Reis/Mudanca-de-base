@@ -5,8 +5,11 @@
 _main/__pycache__/*
 _main/.vscode/*
 
-## Ignorando outro executável
+## Ignorando arquivos testes
 arquivos/outras-versoes/_outros/Testes/
+
+## Ignorando outros executáveis
+arquivos/outras-versoes/_executaveis/
 
 ## Ignorando outras versões da documentação
 arquivos/_documentacao/_caso-de-uso/_outros/*
