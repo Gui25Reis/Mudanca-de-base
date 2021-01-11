@@ -19,26 +19,26 @@ class Gui(QtWidgets.QMainWindow):
     def __init__(self):                                 
         super(Gui, self).__init__()
 
-        self.setWindowIcon(QIcon('images/icon.png'))                                # Define o ícone
-        self.setWindowTitle(" ")                                                    # Define o título (título vazio)
-        self.setFixedSize(180, 290)                                                 # Sempre vai ser esse tamanho
+        self.setWindowIcon(QIcon('images/icon.png'))                            # Define o ícone
+        self.setWindowTitle(" ")                                                # Define o título (título vazio)
+        self.setFixedSize(180, 270)                                             # Sempre vai ser esse tamanho
     
-        self.gui_Ui()                                                               # Chama o método de construção da GUI
+        self.gui_Ui()                                                           # Chama o método de construção da GUI
 
-        self.res = ''                                                               # Atributo que guarda o texto mostrado ao usuário
+        self.res = ''                                                           # Atributo que guarda o texto mostrado ao usuário
         
 
     def gui_Ui(self):
-        root = QtWidgets.QWidget(self)                                         # Área principal (root), onde tudo vai ser colocado dentro        
-        root.setMaximumSize(QtCore.QSize(180, 290))                            # Define o tamanho máximo que ela chega
-        self.setCentralWidget(root)                                            # Define como área central
+        root = QtWidgets.QWidget(self)                                          # Área principal (root), onde tudo vai ser colocado dentro        
+        root.setMaximumSize(QtCore.QSize(180, 270))                             # Define o tamanho máximo que ela chega
+        self.setCentralWidget(root)                                             # Define como área central
 
     ## ------------------------------------------------------------------------------------------------
     ## Entrada do número:
-        lb_Entrada = self.lbl("Número", 12, 10, 10, 151, 31, root)             # Cria a lbl com as coordenadas
-        lb_Entrada.setAlignment(QtCore.Qt.AlignCenter)                         # Alinhamento: texto no centro
+        lb_Entrada = self.lbl("Número", 12, 10, 10, 151, 31, root)              # Cria a lbl com as coordenadas
+        lb_Entrada.setAlignment(QtCore.Qt.AlignCenter)                          # Alinhamento: texto no centro
 
-        self.ent_Entrada = QtWidgets.QTextEdit(root)                           # Cria a entrada de texto
+        self.ent_Entrada = QtWidgets.QTextEdit(root)                            # Cria a entrada de texto
         self.ent_Entrada.setGeometry(QtCore.QRect(10, 40, 161, 21))                 # Define a posição
         self.ent_Entrada.setMaximumSize(161, 21)                                    # Define o tamanho máximo da entrada
         self.ent_Entrada.setFont(QFont('Arial', 12))                                # Fonte
@@ -46,33 +46,33 @@ class Gui(QtWidgets.QMainWindow):
         
     ## ------------------------------------------------------------------------------------------------
     ## Base inicial:
-        lb_Inicial = self.lbl("Base inicial", 12, 10, 80, 91, 21, root)        # Cria a lbl com as coordenadas
-        lb_Inicial.setAlignment(QtCore.Qt.AlignRight)                          # Alinhamento: texto na direita
+        lb_Inicial = self.lbl("Base inicial", 12, 10, 80, 91, 21, root)         # Cria a lbl com as coordenadas
+        lb_Inicial.setAlignment(QtCore.Qt.AlignRight)                           # Alinhamento: texto na direita
 
-        self.ent_Inicial = self.ent(12, 110, 80, 51, 21, root)                 # Cria a entrada de texto com as coordenadas
+        self.ent_Inicial = self.ent(12, 110, 80, 51, 21, root)                  # Cria a entrada de texto com as coordenadas
 
     ## ------------------------------------------------------------------------------------------------
     ## Base final:
-        lb_Final = self.lbl("Base final", 12, 20, 110, 81, 21, root)           # Cria a lbl com as coordenadas
-        lb_Final.setAlignment(QtCore.Qt.AlignRight)                            # Alinhamento: texto na direita
+        lb_Final = self.lbl("Base final", 12, 20, 110, 81, 21, root)            # Cria a lbl com as coordenadas
+        lb_Final.setAlignment(QtCore.Qt.AlignRight)                             # Alinhamento: texto na direita
 
-        self.ent_Final = self.ent(12, 110, 110, 51, 21, root)                  # Cria a entrada de texto com as coordenadas
+        self.ent_Final = self.ent(12, 110, 110, 51, 21, root)                   # Cria a entrada de texto com as coordenadas
 
     ## ------------------------------------------------------------------------------------------------
     ## Calcular:
-        bt_Calcular = QtWidgets.QPushButton("Calcular", root)                       # Cria o botão
-        bt_Calcular.setGeometry(QtCore.QRect(40, 150, 101, 23))                     # Define a posição
-        bt_Calcular.clicked.connect(self.cal_pressed)                               # Add a ação dele
+        bt_Calcular = QtWidgets.QPushButton("Calcular", root)                   # Cria o botão
+        bt_Calcular.setGeometry(QtCore.QRect(40, 150, 101, 23))                 # Define a posição
+        bt_Calcular.clicked.connect(self.cal_pressed)                           # Add a ação dele
 
-        self.lb_Resposta = QtWidgets.QTextBrowser(root)                             # Cria a saída de texto
-        self.lb_Resposta.setGeometry(QtCore.QRect(10, 180, 161, 51))                # Define sua posição
+        self.lb_Resposta = QtWidgets.QTextBrowser(root)                         # Cria a saída de texto
+        self.lb_Resposta.setGeometry(QtCore.QRect(10, 180, 161, 51))            # Define sua posição
 
     ## ------------------------------------------------------------------------------------------------
     ## Copyright:
-        txt_Copyright = "COPYRIGHT © 2020 KINGS\nAll rights reserved"          # Texto copyright
-        copyright_Txt = self.lbl(txt_Copyright, 7, 20, 240, 141, 31, root)     # Cria a lbl com as coordenadas
-        copyright_Txt.setFont(QFont('Arial',7, QFont.Bold))                    # Fonte
-        copyright_Txt.setAlignment(QtCore.Qt.AlignCenter)                      # Alinhamento: texto no centro
+        txt_Copyright = "COPYRIGHT © 2020 KINGS\nv1.1.0"                                # Texto copyright
+        copyright_Txt = self.lbl(txt_Copyright, 7, 20, 235, 141, 31, root)      # Cria a lbl com as coordenadas
+        copyright_Txt.setFont(QFont('Arial',7, QFont.Bold))                     # Fonte
+        copyright_Txt.setAlignment(QtCore.Qt.AlignCenter)                       # Alinhamento: texto no centro
 
 
 ## ------------------------------------------------------------------------------------------------
@@ -81,14 +81,14 @@ class Gui(QtWidgets.QMainWindow):
 
     # Cria todas as lbls
     def lbl(self, txt_, tam_, p1_, p2_, p3_, p4_, wid_):
-        lb = QtWidgets.QLabel(txt_, wid_)                                      # Cria uma label
+        lb = QtWidgets.QLabel(txt_, wid_)                                       # Cria uma label
         lb.setGeometry(QtCore.QRect(p1_, p2_, p3_, p4_))                            # Define a posição
         lb.setFont(QFont('Arial', tam_))                                            # Define a fonte
         return lb                                                                   # Retorna a label
 
     # Cria as entradas numéricas
     def ent(self, tam_, p1_, p2_, p3_, p4_, wid_):
-        ent = QtWidgets.QSpinBox(wid_)                                         # Cria uma entrada de números
+        ent = QtWidgets.QSpinBox(wid_)                                          # Cria uma entrada de números
         ent.setGeometry(QtCore.QRect(p1_, p2_, p3_, p4_))                           # Define a posição
         ent.setFont(QFont('Arial', tam_))                                           # Define a fonte
         ent.setMinimum(2)                                                           # Número mínimo
