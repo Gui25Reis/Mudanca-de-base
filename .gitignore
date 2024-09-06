@@ -1,3 +1,6 @@
+## Mac
+*.DS_Store
+
 ## Ignorando todos os arquivos de photoshop
 *.psd
 
